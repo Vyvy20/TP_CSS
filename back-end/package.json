@@ -2,7 +2,7 @@
   "name": "back-end",
   "version": "1.0.0",
   "main": "server.js",
-  "license": "MIT",
+  "license": "",
   "private": true,
   "scripts": {
     "dev": "nodemon server.js"

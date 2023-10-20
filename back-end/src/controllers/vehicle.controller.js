@@ -30,10 +30,12 @@ exports.getVehicles = (req, res) => {
 };
 
 exports.createVehicle = async (req, res) => {
+
+    
     const vehicle = await Vehicle.create({
         brand: req.body.brand,
         modele: req.body.modele,
-        userid: req.body.id, // il faut utiliser l'id de l'utilisateur qui créer
+        userid: req.userid, // il faut utiliser l'id de l'utilisateur qui créer
         seriesNumber: req.body.seriesNumber,
         pieceToChange: req.body.pieceToChange,
         createdAt: new Date(),

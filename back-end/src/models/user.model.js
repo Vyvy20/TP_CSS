@@ -18,5 +18,8 @@ module.exports = (sequelize, Sequelize) => {
         }
     });
 
+    User.associate = (models) => {
+        User.hasMany(models.Vehicule, { foreignKey: 'userId' });
+    };
     return User;
 };

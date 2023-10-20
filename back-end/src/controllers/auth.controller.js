@@ -7,10 +7,12 @@ const Op = db.Sequelize.Op;
 
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
+const { UUID, UUIDV4 } = require("sequelize");
 
 exports.signup = (req, res) => {
     // Save User to Database
     User.create({
+        id: UUIDV4,
         username: req.body.username,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 8)

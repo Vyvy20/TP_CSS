@@ -10,9 +10,11 @@ export function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/listIntervention" element={<ListItervention />} />
-        <Route path="/connect" element={<InterventionItem isEnable={true} textStatus={"je Part"} />} />
+        <Route
+          path="/connect"
+          element={<InterventionItem isEnable={true} textStatus={"je Part"} />}
+        />
       </Routes>
     </main>
   );
 }
-

@@ -14,7 +14,7 @@ export function InterventionItem({ numberPhone, ville, address, textStatus, isEn
                     <p>nom referant</p>
                 </div>
                 <div>
-                    <a href={`tel:+33${numberPhone}`}><img src={phone} alt="image phone" /></a>
+                    <a href={`tel:+33${numberPhone.substring(1)}`}><img src={phone} alt="image phone" /></a>
                 </div>
             </div>
             {isEnable && (

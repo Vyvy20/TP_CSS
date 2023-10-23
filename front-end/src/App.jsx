@@ -1,17 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import { InputLogin } from "./components/inputLogin/inputLogin";
 import { LoginPage } from "./view/Login/login";
+import "./App.css";
+import { InterventionItem } from "./components/InterventionItem/interventionItem";
 
-function App() {
+export function App() {
   return (
     <main>
       <Routes>
-        <Route path="/login" element={<LoginPage/>}/>
-        <Route path="/connect" element={<InputLogin type={"text"} placeHolder={"Identifiant"} id={"input_identifiant"} name={"identifiant"} onChange={() => {}} />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/connect" element={<InterventionItem isEnable={true} textStatus={"je Part"} />} />
       </Routes>
     </main>
   );
 }
 
-export default App;

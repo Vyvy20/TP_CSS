@@ -8,7 +8,7 @@ export function App() {
   return (
     <main>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        <Route path={"/login"} element={<LoginPage />} />
         <Route path="/listIntervention" element={<ListItervention />} />
         <Route
           path="/connect"

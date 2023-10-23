@@ -6,14 +6,14 @@ import "./header.sass";
 export function Header() {
   return (
     <header>
-      <a>
+      <button>
         <img src={Return} alt="Return icon" />
-      </a>
+      </button>
 
       <img src={logo} alt="Logo de votre marque" />
-      <a>
+      <button>
         <img src={Logout} alt="Logout icon" />
-      </a>
+      </button>
     </header>
   );
 }

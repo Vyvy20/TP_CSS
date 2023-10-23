@@ -1,5 +1,5 @@
 import camion from '../../assets/svg/Camion.svg'
-import "./PlaqueImatriculation.sass"
+import "./plaqueImatriculation.sass"
 
 export function PlaqueImatriculation({ numberPlaque }) {
     return (

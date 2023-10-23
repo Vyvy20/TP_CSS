@@ -1,4 +1,4 @@
-import './SubmitLoginButton.css'
+import './SubmitLoginButton.sass'
 
 export const SubmitLoginButton = () => {
     return (

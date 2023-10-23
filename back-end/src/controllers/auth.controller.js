@@ -1,5 +1,6 @@
 const db = require("../models");
 const config = require("../config/auth.config");
+const uuid = require('uuid');
 const User = db.user;
 const Role = db.role;
 
@@ -11,6 +12,7 @@ var bcrypt = require("bcryptjs");
 exports.signup = (req, res) => {
     // Save User to Database
     User.create({
+        id: uuid.v4(),
         username: req.body.username,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 8)

@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 //route
 require('./src/routes/auth.routes')(app);
 require('./src/routes/user.routes')(app);
+require('./src/routes/vehicle.routes')(app);
 
 const server = http.createServer(app)
 

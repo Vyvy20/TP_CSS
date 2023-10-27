@@ -1,7 +1,7 @@
 import { InputLogin } from "../../components/inputLogin/inputLogin";
 import { SubmitLoginButton } from "../../components/submitLoginButton/submitLoginButton";
 import logo from '../../assets/image/Logo.png'
-import "./login.sass"
+import "./login.scss"
 import useForm from "../../hook/useForm";
 import { login } from "../../service/authService";
 import { useState } from "react";

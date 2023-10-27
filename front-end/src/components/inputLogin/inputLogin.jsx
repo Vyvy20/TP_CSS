@@ -1,4 +1,4 @@
-import './inputLogin.sass'
+import './inputLogin.scss'
 
 export const InputLogin = ({ name, ...rest }) => {
     return (

@@ -1,5 +1,5 @@
 import phone from "../../assets/svg/Phone.svg";
-import './interventionItem.sass'
+import './interventionItem.scss'
 
 export function InterventionItem({ numberPhone, ville, address, textStatus, isEnable }) {
     const setpHandler = () => {

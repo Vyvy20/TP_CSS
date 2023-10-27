@@ -2,7 +2,7 @@ import { InterventionItem } from "../../components/InterventionItem/intervention
 import { Header } from "../../components/header/header";
 import { PlaqueImatriculation } from "../../components/plaqueImatriculation/plaqueImatriculation";
 import { getItervention } from "../../service/inteventionService";
-import "./listItervention.sass"
+import "./listItervention.scss"
 export function ListItervention() {
     const data = getItervention();
 
